@@ -1,0 +1,27 @@
+net: "$PROJECTDIR/Resnet_50_finetuning.prototxt"
+
+test_iter: 120
+test_interval: 2000
+test_initialization: false
+
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 0.0001
+
+
+lr_policy: "multistep"
+stepvalue: 50000
+stepvalue: 100000
+stepvalue: 150000
+stepvalue: 200000
+stepvalue: 250000
+stepvalue: 500000
+stepvalue: 375000
+gamma: 0.1
+
+display: 100
+
+max_iter: 400000
+snapshot: 2000
+snapshot_prefix: "$PROJECTDIR/models/resnet_final_finetuning"
+solver_mode: GPU
