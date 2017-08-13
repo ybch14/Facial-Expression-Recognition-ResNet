@@ -76,7 +76,7 @@ python main.py
 
 ### Test on your images
 
-After all these above steps, you can run ```bagging_test.py``` to test your own image. Note: before you run the test, you need to double check the GPU indices in ```bagging_test.py```, because the origin definition needs at least four GPUs with at least 3G memory:
+After all these above steps, you can run ```bagging_test.py``` to test your own image. Note: before you run the test, you need to double check the GPU indices in ```bagging_test.py```, because the original definition needs at least four GPUs with at least 3G memory:
 
 ```
 cd finetuning/
