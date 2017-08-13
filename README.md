@@ -10,21 +10,18 @@ This is a course project of Media and Cognition of Department of EE., Tsinghua U
 
 ## File list
 
-### ```preprocess```
-    - ```preprocess/model```: MTCNN models, including P-Net, R-Net and O-Net trained models.
-    - ```preprocess/main.py```: Preprocess main function, with detect faces in images, crop faces region and resize to a fixed size.
-### ```pretrain```
-    - ```pretrain/pretrain.sh```: Pre-train script, **using offical version caffe**.
-    - ```pretrain/Resnet_50_pretrain.prototxt```: Model definition of modified ResNet-50 model (change the last classification output from 1000 to 8).
-    - ```pretrain/Resnet_50_solver.prototxt```: Hyper-parameters definition of pre-training.
-    - ```pretrain/resnet_pretrain_model.caffemodel```: Pre-trained model on FER2013 dataset.
-### ```finetuning```
-    - ```finetuning/models/*```: Fine-tuned models, multiple models used for bagging test.
-    - ```bagging_test.py```: Test step main function, bagging five models' votes and recognize facial expression for new images.
-    - ```train.sh```: Fine-tuning script, **using twtygqyy version caffe**.
-    - ```Resnet_50_finetuning.prototxt```: Fine-tuning model definition, **using twtygqyy version caffe**.
-    - ```Resnet_finetuning_solver.prototxt```: Hyper-parameters definition of fine-tuning.
-    - ```deploy.prototxt```: Deployment model used in test step. This model works fine with any version of caffe.
+- ```preprocess/model```: MTCNN models, including P-Net, R-Net and O-Net trained models.
+- ```preprocess/main.py```: Preprocess main function, with detect faces in images, crop faces region and resize to a fixed size.
+- ```pretrain/pretrain.sh```: Pre-train script, **using offical version caffe**.
+- ```pretrain/Resnet_50_pretrain.prototxt```: Model definition of modified ResNet-50 model (change the last classification output from 1000 to 8).
+- ```pretrain/Resnet_50_solver.prototxt```: Hyper-parameters definition of pre-training.
+- ```pretrain/resnet_pretrain_model.caffemodel```: Pre-trained model on FER2013 dataset.
+- ```finetuning/models/*```: Fine-tuned models, multiple models used for bagging test.
+- ```bagging_test.py```: Test step main function, bagging five models' votes and recognize facial expression for new images.
+- ```train.sh```: Fine-tuning script, **using twtygqyy version caffe**.
+- ```Resnet_50_finetuning.prototxt```: Fine-tuning model definition, **using twtygqyy version caffe**.
+- ```Resnet_finetuning_solver.prototxt```: Hyper-parameters definition of fine-tuning.
+- ```deploy.prototxt```: Deployment model used in test step. This model works fine with any version of caffe.
 - ```report.pdf```: the technology report of this project.
 
 ## Usage
