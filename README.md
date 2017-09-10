@@ -1,6 +1,6 @@
 # Facial expression Recognition
 
-This is a course project of Media and Cognition of Department of EE., Tsinghua University. The main topic is facial expression recognition. Our method is based on [ResNet-50 model](https://github.com/KaimingHe/deep-residual-networks), implementing with [caffe](https://github.com/BVLC/caffe). The model is pretrained on [FER2013 dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) and finetuned on several other datasets and our self-captured dataset. The final accuracy is 97.7% (on open datasets, see ```report.pdf```) and 66.7% (on self-captured dataset). More details about datasets, implement details, experiment results or something else can be find in ```report.pdf```. 
+This is a course project of Media and Cognition of Department of EE., Tsinghua University. The main topic is facial expression recognition. Our method is based on [ResNet-50 model](https://github.com/KaimingHe/deep-residual-networks), implementing with [caffe](https://github.com/BVLC/caffe). The model is pretrained on [FER2013 dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) and finetuned on several other datasets and our self-captured dataset. The final accuracy is 97.7% (on open datasets, see ```report.pdf```) and 66.7% (on self-captured dataset). More details about datasets, implement details, experiment results or something else can be found in ```report.pdf```. 
 
 ## Note
 
