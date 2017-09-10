@@ -4,7 +4,7 @@ This is a course project of Media and Cognition of Department of EE., Tsinghua U
 
 ## Note
 
-- This project using two versions of caffe: one is [offical version](https://github.com/BVLC/caffe) and the other is the [twtygqyy version](https://github.com/twtygqyy/caffe-augmentation) for further data augmentation. Detailed usage is described below.
+- This project uses two versions of caffe: one is [offical version](https://github.com/BVLC/caffe) and the other is the [twtygqyy version](https://github.com/twtygqyy/caffe-augmentation) for further data augmentation. Detailed usage is described below.
 - The image pre-processing step include face detection and cropping. In this step we use [MTCNN method](https://github.com/ybch14/MTCNN_face_detection_alignment), implementing with Python.
 - The bagging test method includes five models, with means a large GPU memory required, or multiple GPUs.
 
@@ -82,13 +82,13 @@ After all these above steps, you can run ```bagging_test.py``` to test your own 
 cd finetuning/
 # adjust GPU indices
 # ...
-# make sure the test can correctly on your machine
+# make sure the test can correctly run on your machine
 python bagging_test.py
 ```
 
 ### Train your own model 
 
-If you want to train your own model with your datasets, you can switch to ```pretrain``` or ```finetuning``` and execute the ```*.sh``` script. Note: if you are following the above steps, you can execute the scripts directly. If you want to use your own caffe, you need to change the caffe paths:
+If you want to train your own model with your datasets, you can switch to ```pretrain``` or ```finetuning``` and execute the ```*.sh``` script. Note: if you are following the above steps, you can execute the scripts directly. If you want to use your own caffe, you need to change the caffe paths in \*.sh:
 
 ```
 cd pretrain/
